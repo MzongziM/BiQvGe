@@ -1,0 +1,32 @@
+/* 全局样式 */
+*{margin: auto;padding: 0;font-family: 宋体;text-decoration: none;}
+.float-left{float: left;}
+.float-right{float: right;}
+.red{color: red;}
+a{color: #6f78a7;text-decoration: none;}
+a:hover{text-decoration: underline;color: #f60;}
+li{list-style: none;}
+.captionTitle{color: white;font-family: "宋体";font-size: 24px;margin-bottom: 20px;}
+.captionText{color: white;font-size: 16px;text-indent: 2em;}
+.border{border: 3px solid #c3defa;}
+
+/* root */
+body{background-color: rgb(233,250,255);font-size: 12px;}
+/* header */
+header{width: 980px;height: 61px;margin: 0 auto;padding: 5px 0;}
+
+/* header_logo */
+#header_logo{background: url(../IMG/logo.png) no-repeat;}
+#header_logo>a{height: 60px;width: 200px;cursor: pointer;background: inherit;display: block;}
+
+/* headeer_search */
+#header_search{margin: 15px auto auto 20px;width: 450px;}
+/* 输入框样式 */
+#header_search>form>input{width: 320px;height: 24px;padding: 3px;margin-right: 5px;border: 1px solid #a6d3e8;font: 16px/22px arial;}
+/* 按钮样式 */
+#header_search>form>button{background: #ddd;cursor: pointer;font-size: 14px;height: 32px;width: 95px;border: 1px solid #d3d3d3;border-color: #e5e5e5 #bbb #bbb #e5e5e5;}
+#header_search button:hover{background-color: #e5e5e5;}
+
+/* header_userpanel */
+#header_userpanel{width: 225px;margin-top: 3px;padding: 3px 3px;border: 1px dotted #bbc6e5;color: #9e9e9e;text-align: center;}
+#header_userpanel a{line-height: 200%;}

@@ -1,0 +1,122 @@
+main{width: 980px;}
+
+/* show */
+#show{padding-top: 10px;height: 416px;}
+
+/* 轮播图 */
+.slideshow{
+	width: 695px;
+	height: 410px;
+	overflow: hidden;
+	background-color: #fef9ef;
+	position: relative;
+	float: left;
+}
+.slideshow>div{
+	width:calc(5*100%);
+	height: 100%;
+	position: relative;
+	left: 0;top: 0;
+}
+
+/* 轮播图内部展示图片公用属性 */
+.displayImg{
+	width: 20%;
+	height: 100%;
+}
+.Backblur{
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	filter: blur(5px);
+}
+.displayImg img{
+	position: absolute;
+	top: 14%;
+	left: 7%;
+	box-shadow: #00000040 3px 3px 4px 3px;
+	cursor: pointer;
+	width: 31%;
+	height: 72%;
+}
+.displayImg img:hover{
+	top: 13%;
+}
+.caption{/* 使用了怪异盒子 */
+	position: absolute;
+	top: 14%;
+	left: 40%;
+	width: 53%; 
+	height: 72%; 
+	background-color: #ffffff20;
+	padding: 30px;
+	box-sizing: border-box;
+}
+
+/* Javascript在加载前进行初始化 */
+
+.displayImg1{position: absolute;left: 0;}
+.displayImg1 .Backblur{background-image: url(../IMG/book1.jpg);}
+.displayImg2{position: absolute;left: 695px;}
+.displayImg2 .Backblur{background-image: url(../IMG/book2.jpg);}
+.displayImg3{position: absolute;left: 1390px;}
+.displayImg3 .Backblur{background-image: url(../IMG/book3.jpg);}
+.displayImg4{position: absolute;left: 2085px;}
+.displayImg4 .Backblur{background-image: url(../IMG/book4.jpg);}
+.displayImg5{position: absolute;left: 2775px;}
+.displayImg5 .Backblur{background-image: url(../IMG/book1.jpg);}
+
+/* 排行榜 */
+.rank{width: 265px;background-color: #FEF9EF;}
+.rank h3{line-height: 30px;padding-left: 10px;background-color: #E1ECED;border-bottom: solid 1px #DDDDDD;}
+.rank ul{padding: 5px 10px;}
+.rank ul li{line-height: 25px;padding-bottom: 5px;}
+.rank ul li+li{border-top: 1px dotted #d3d3d3;}
+/* 排行榜内展示样式 */
+.s1{width: 40px;display: inline-block;float: left;}
+.s3{float: right;color: #b3b3b3;}
+
+/* 推荐栏目page2 */
+.page2{margin-top: 10px;padding: 3px;overflow: hidden;background: none repeat scroll 0 0 #FEF9EF;}
+.recommend{width: 315px;padding: 0 3px;float: left;border-right: dotted 1px #D1D1D1;}
+.recommend h3{line-height: 25px;padding-left: 5px;border-bottom: solid 1px #A6D3E8;background-color: #F6F8FE;}
+
+.top{overflow: hidden;}
+.top>div{width: 71px;float: left;padding: 10px 0 0 5px;}
+.top div a img{width: 100%;padding: 1px;border: solid 1px #DDDDDD;}
+.top dl{padding: 10px 0px 0px 0px;float: right;width: 219px;}
+.top dl dt{height: 25px;line-height: 25px;overflow: hidden;font-weight: bold;}
+.top dl dd{line-height: 20px;height: 60px;overflow: hidden;color: #888;}
+
+.recommend ul{padding: 10px 0px 0px 0px;}
+.recommend ul li{color: #8E8E8E;height: 20px;line-height: 20px;font-size: 12px;overflow: hidden;float: left;width: 155px;margin: 3px 0;}
+
+/* page3 page3-left */
+.page3{margin-top: 10px;overflow: hidden;}
+.page3-left{border: 3px solid #C3DFEA;float: left;width: 695px;background: #fafafa;}
+.page3-right{float: right;width: 265px;border: 3px solid #C3DFEA;background: #fafafa;}
+.page3 h3{margin: 0px;overflow: hidden;padding: 0px 0px 0px 10px;background-color: #E1ECED;height: 30px;line-height: 30px;font-size: 14px;font-weight: bold;border-bottom: solid 1px #DDDDDD;}
+
+.page3-left ul{padding: 10px;}
+.page3-left ul li{padding: 5px 0px 0px 0px;border-bottom: solid 1px #DDDDDD;height: 25px;line-height: 25px;overflow: hidden;}
+.page3-left ul li span{display: inline-block;}
+.page3-left ul li .s1{width: 75px;}
+.page3-left ul li .s2{width: 150px;}
+.page3-left ul li .s6{width: 250px;}
+.page3-left ul li .s4{color: #B3B3B3;width: 60px;text-align: right;}
+.page3-left ul li .s5{color: #B3B3B3;float: right;text-align: right;}
+/* page3 page3-right */
+.page3-right{float: right;width: 265px;border: 3px solid #C3DFEA;background: #fafafa;}
+.page3-right ul{padding: 10px;}
+.page3-right ul li{    padding: 5px 0px 0px 0px;border-bottom: solid 1px #DDDDDD;height: 25px;line-height: 25px;overflow: hidden;}
+.page3-right ul li span{display: inline-block;float: left;}
+.page3-right ul li .s1{width: 40px;}
+.page3-right ul li .s2{width: 90px;}
+.page3-right ul li .s5{color: #B3B3B3;float: right;text-align: right;}
+
+/* page4 */
+.page4{width: 960px;padding: 10px;margin: 10px auto 10px auto;border: solid 1px #DDDDDD;line-height: 22px;}
+.page4 a{margin: 0px 9px 0px 0px;display: inline-block;}
+.clear{clear: both;}

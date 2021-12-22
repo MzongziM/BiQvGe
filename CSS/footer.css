@@ -1,0 +1,4 @@
+footer{margin: auto;overflow: hidden;width: 980px;text-align: center;}
+.footer_link{width: 100%;border-bottom: 2px solid #c3dfea;height: 5px;line-height: 0;overflow: hidden;margin: 5px auto;}
+.footer_cont{padding: 8px 0;}
+.footer_cont p{line-height: 22px;color: #b2b2b2;}
